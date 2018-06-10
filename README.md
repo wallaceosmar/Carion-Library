@@ -50,7 +50,7 @@ $carion->singleton( 'example', function ( $value ) {
 echo $carion->example;
 ```
 
-If the does`t have a value to the paramter set as null the value.
+If the does`t have a value to the paramter, will be seted null as the value.
 ```php
 
 $carion = new Carion\Carion();
@@ -68,10 +68,17 @@ echo $carion->example;
 ## Calling a function or class method
 
 You can call a function or a class method using the function call.
+
 The function call is reponsibly to map all the paramters.
-Parsing a array with key name is overwrite the order of values.
 ```php
 echo $carion->call(function( $value1, $value2 ) {
     return $value1 + $value2;
 }, array( 10, 20 ));
+```
+
+Parsing a array with key name overwrite the order of values.
+```php
+echo $carion->call(function( $value1, $value2 ) {
+    return $value1 + $value2;
+}, array( 10, 20, 'value1' => 0 ));
 ```
