@@ -2,6 +2,12 @@
 
 Carion is a simple singleton manager framework.
 
+# Installing
+
+```bash
+composer require wallaceosmar/carion-framework
+```
+
 ## How Use
 
 The access of the values can be due to a object value or array access.
