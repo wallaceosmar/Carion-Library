@@ -47,7 +47,7 @@ singleton register in the class.
 
 $carion = new Carion\Carion();
 
-$cation->value = 'example';
+$carion->set('value', 'example');
 
 $carion->singleton( 'example', function ( $value ) {
     return $value;
