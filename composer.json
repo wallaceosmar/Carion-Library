@@ -4,6 +4,7 @@
     "license": "MIT",
     "keywords": [ "manage", "singleton", "registry" ],
     "type": "library",
+    "version": "v0.0.1",
     "authors": [
         {
             "name": "Wallace Osmar",
